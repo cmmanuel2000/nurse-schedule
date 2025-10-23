@@ -1,15 +1,20 @@
 {
   "name": "nurse-schedule",
   "version": "1.0.0",
-  "description": "",
+  "description": "Modern nurse scheduling app with intelligent shift assignment",
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "node server.js",
+    "dev": "node server.js",
+    "vercel-build": "echo Build complete"
   },
-  "keywords": [],
+  "keywords": ["nurse", "schedule", "healthcare", "shift-management"],
   "author": "",
   "license": "ISC",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "dependencies": {
     "cors": "^2.8.5",
     "express": "^5.1.0",

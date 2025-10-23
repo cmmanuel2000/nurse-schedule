@@ -1,0 +1,11 @@
+.env
+node_modules
+.git
+*.log
+.DS_Store
+Thumbs.db
+.vscode
+.idea
+*.swp
+*.swo
+nov2.json

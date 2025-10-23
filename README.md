@@ -65,7 +65,19 @@ npm start
 5. **Open your browser**
 Navigate to `http://localhost:3000`
 
-## 📋 Usage
+## � Deploy to Vercel
+
+For detailed deployment instructions, see [DEPLOYMENT.md](./DEPLOYMENT.md)
+
+**Quick Deploy:**
+1. Push your code to GitHub
+2. Import project in [Vercel Dashboard](https://vercel.com)
+3. Add `MONGODB_URI` environment variable
+4. Deploy! 🎉
+
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https://github.com/YOUR_USERNAME/nurse-schedule)
+
+## �📋 Usage
 
 ### 1. Add Staff Members
 - Enter staff name and select role (Nurse/Nursing Attendant/Supervisor)
