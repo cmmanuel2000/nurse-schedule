@@ -1,5 +1,9 @@
 # Environment variables
 .env
+.env.local
+.env.*.local
+.env.production
+.env.development
 
 # Node modules
 node_modules/
@@ -8,6 +12,7 @@ node_modules/
 logs
 *.log
 npm-debug.log*
+yarn-error.log*
 
 # OS files
 .DS_Store
@@ -26,3 +31,21 @@ Thumbs.db
 # Temporary files
 *.tmp
 .temp/
+
+# Vercel
+.vercel
+
+# Build outputs
+dist/
+build/
+.next/
+
+# SSH keys
+*.pem
+*.key
+id_rsa
+id_ed25519
+
+# Backup files
+*.backup
+*.bak
