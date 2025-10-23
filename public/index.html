@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nurse Schedule Maker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+</head>
+<body>
+    <h1>Nurse Schedule Maker</h1>
+
+    <div class="container">
+        <section class="card">
+            <h2>1. Add Staff</h2>
+            <form id="addStaffForm">
+                <input type="text" id="staffName" placeholder="Staff Name" required>
+                <select id="staffRole" required>
+                    <option value="">Select Role</option>
+                    <option value="Supervisor">Supervisor</option>
+                    <option value="Nurse">Nurse</option>
+                    <option value="Nursing Attendant">Nursing Attendant</option>
+                </select>
+                <button type="submit">Add Staff</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>2. Request Day(s) Off</h2>
+            <form id="addUnavailabilityForm">
+                <select id="unavailabilityStaffId" required>
+                    <option value="">Select Staff</option>
+                </select>
+                <label for="unavailabilityStartDate">Start Date:</label>
+                <input type="date" id="unavailabilityStartDate" required>
+                <label for="unavailabilityEndDate">End Date:</label>
+                <input type="date" id="unavailabilityEndDate" required>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+
+        <section class="card">
+            <h2>3. Request a Shift</h2>
+            <form id="addShiftRequestForm">
+                <select id="shiftRequestStaffId" required>
+                    <option value="">Select Staff</option>
+                </select>
+                <label for="shiftRequestDate">Date:</label>
+                <input type="date" id="shiftRequestDate" required>
+                <label for="shiftRequestShift">Shift:</label>
+                <select id="shiftRequestShift" required>
+                    <option value="">Select Shift</option>
+                    <option value="6A6P">6A6P</option>
+                    <option value="6A2P">6A2P</option>
+                    <option value="2P10P">2P10P</option>
+                    <option value="6P6A">6P6A</option>
+                    <option value="10P6A">10P6A</option>
+                </select>
+                <button type="submit">Submit Request</button>
+            </form>
+        </section>
+    </div>
+
+    <div class="container">
+        <section class="card">
+            <h2>4. Generate New Schedule</h2>
+            <form id="generateScheduleForm">
+                <label for="startDate">Start Date:</label>
+                <input type="date" id="startDate" required>
+                <label for="endDate">End Date:</label>
+                <input type="date" id="endDate" required>
+                <button type="submit">Generate Schedule</button>
+            </form>
+        </section>
+    </div>
+
+    <section class="card view-schedule-card">
+        <h2>Schedule Actions</h2>
+        <div class="actions-container">
+            <form id="showScheduleForm" class="action-form">
+                <h3>Show Existing Schedule</h3>
+                <label for="showStartDate">Start Date:</label>
+                <input type="date" id="showStartDate" required>
+                <label for="showEndDate">End Date:</label>
+                <input type="date" id="showEndDate" required>
+                <button type="submit">Show Schedule</button>
+            </form>
+            <form id="deleteScheduleForm" class="action-form">
+                <h3>Delete Schedule</h3>
+                <label for="deleteStartDate">Start Date:</label>
+                <input type="date" id="deleteStartDate" required>
+                <label for="deleteEndDate">End Date:</label>
+                <input type="date" id="deleteEndDate" required>
+                <button type="submit" class="delete-button">Delete Schedule</button>
+            </form>
+            <div class="action-form">
+                <h3>Export Schedule</h3>
+                <p>Download the currently displayed schedule as an Excel file.</p>
+                <button id="exportExcelButton" class="export-button">Export to Excel</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="schedule-display">
+        <h2>Current Schedule</h2>
+        <div class="table-scroll-hint" id="scrollHint">← Scroll to see more →</div>
+        <table id="scheduleTable">
+            <thead>
+                <tr id="dateRow"></tr>
+            </thead>
+            <tbody id="scheduleBody"></tbody>
+        </table>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>

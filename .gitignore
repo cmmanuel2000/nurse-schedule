@@ -1,0 +1,28 @@
+# Environment variables
+.env
+
+# Node modules
+node_modules/
+
+# Logs
+logs
+*.log
+npm-debug.log*
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Database files (optional - if you want to exclude any local DB files)
+*.db
+*.sqlite
+
+# Temporary files
+*.tmp
+.temp/

@@ -1,0 +1,52 @@
+[
+  {
+    "staffId": { "$oid": "68f25d7b95679d6f15dbf681" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "10P6A"
+  },
+  {
+    "staffId": { "$oid": "68f25d8795679d6f15dbf684" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "6P6A"
+  },
+  {
+    "staffId": { "$oid": "68f25dd195679d6f15dbf693" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "6P6A"
+  },
+  {
+    "staffId": { "$oid": "68f25df295679d6f15dbf699" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "6A2P"
+  },
+  {
+    "staffId": { "$oid": "68f25e0f95679d6f15dbf69f" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "6A6P"
+  },
+  {
+    "staffId": { "$oid": "68f25e1b95679d6f15dbf6a2" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "2P10P"
+  },
+  {
+    "staffId": { "$oid": "68f25e3d95679d6f15dbf6ab" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "6A6P"
+  },
+  {
+    "staffId": { "$oid": "68f25e4895679d6f15dbf6ae" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "6A2P"
+  },
+  {
+    "staffId": { "$oid": "68f25e6295679d6f15dbf6b4" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "2P10P"
+  },
+  {
+    "staffId": { "$oid": "68f25e9495679d6f15dbf6bd" },
+    "date": { "$date": "2025-11-02T00:00:00Z" },
+    "shift": "10P6A"
+  }
+]
